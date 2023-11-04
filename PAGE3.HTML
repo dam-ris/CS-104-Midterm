@@ -1,0 +1,164 @@
+<html>
+<head>
+    <title>Payment Page</title>
+ 
+</head>
+<body>
+    <header>
+       
+      <h1 style="color: Brown;">Payment Plan</h1>
+    </header>
+    <main>
+
+</body>
+</html>
+
+
+<html>
+<head>
+    <title>Payment Form</title>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="your_payment_script.js"></script>
+</head>
+<body>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Subscription Form</title>
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="your_subscription_script.js"></script>
+</head>
+<body>
+    <form id="subscription-form">
+        <div>
+            <label for="subscription-plan">Select a Plan:</label>
+            <select id="subscription-plan" name="plan">
+                <option value="monthly">Monthly Subscription ($10/month)</option>
+                <option value="yearly">Yearly Subscription ($100/year)</option>
+            </select>
+        </div>
+
+   
+    <form id="payment-form">
+        <div>
+            <label for="card-element">
+                Credit or Debit Card
+            </label>
+            <div id="card-element">
+            </div>
+
+    
+            <div id="card-errors" role="alert"></div>
+        </div>
+
+       
+
+    <main>
+        <form action="process_payment.php" method="post">
+
+            <label for="Cardholder Name">Cardholder Name:</label>
+            <input type="text" id="Cardholder Name" name="Cardholder Name" required>
+            <div class="flex-container"
+</div>
+
+            <label for="card_number">Card Number:</label>
+            <input type="text" id="card_number" name="card_number"
+            required>
+            <div class="flex-container"
+</div>
+            
+            <label for="Expiration"> Expiration:</label>
+            <input type="text" id="Expiration" name="Expiration"
+            required>
+            <div class="flex-container"
+</div>
+        
+            <label for="CVV"> CVV:</label>
+            <input type="text" id="CVV" name="CVV"
+            required>
+            <div class="flex-container"
+</div>
+            <label for="Postal Code"> Postal Code:</label>
+            <input type="text" id="Postal Code" name="Postal Code"
+<!-- Add more payment fields like expiration date, CVV, etc. -->
+    <div class="flex-container"
+</div>
+
+            <button type="submit">Submit Payment</button>
+    </form>
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Total Payment Calculation</title>
+</head>
+<body>
+    <form id="payment-form">
+        <label for="item1">Item 1: $</label>
+        <input type="number" id="item1" name="item1" min="0" step="0.01" value="0.00"><br>
+       
+
+       
+        <label for="total">Total Payment: $</label>
+        <input type="text" id="total" name="total" value="0.00" readonly><br>
+       
+        <button type="button" id="calculate-button">Calculate Total</button>
+    </form>
+
+    <script>
+        // Get the form elements
+        var item1Input = document.getElementById("item1");
+        var item2Input = document.getElementById("item2");
+        var item3Input = document.getElementById("item3");
+        var totalInput = document.getElementById("total");
+        var calculateButton = document.getElementById("calculate-button");
+
+        calculateButton.addEventListener("click", function() {
+           
+            var item1 = parseFloat(item1Input.value) || 0;
+       
+            var total = item1;
+
+
+            totalInput.value = total.toFixed(2); 
+        });
+    </script>
+</body>
+</html>
+
+
+        </form>
+    </main>
+    <footer>
+        <p>&copy; 2023 NJIT SPOT ON</p>
+    </footer>
+</body>
+</html>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Thank You Page</title>
+    <link rel="#FFE4C4" type="text/css" href="styles.css">
+</head>
+<body>
+    <header>
+         <h1 style="color: Brown;">Thank You For Your Purchase</h1>
+    </header>
+    <main>
+        <p>Thank you for your payment. Your order has been successfully processed.</p>
+    
+    </main>
+    <footer>
+        <p>&copy; 2023 NJIT SPOT ON</p>
+    </footer>
+      <style>
+        body {
+            background-color: #FFE4C4; 
+        }
+</body>
+</html>

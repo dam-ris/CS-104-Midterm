@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Website Account</title>
+    <style>
+        body {
+            background-color: #A52A2A; 
+            color: #ffffff; 
+            font-family: Arial, sans-serif; 
+        }
+        .container {
+            text-align: center;
+            padding: 50px;
+        }
+        .form {
+            background-color: rgba(0, 0, 0, 0.5); 
+            padding: 30px;
+            border-radius: 10px;
+        }
+        .form label, .form input, .form button {
+            display: block;
+            margin: 10px;
+        }
+        .form input {
+            width: 90%;
+            padding: 10px;
+        }
+        .form button {
+            background-color: #A52A2A; 
+            color: #ffffff; 
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>NJIT SPOT ON</h1>
+
+        <div class="form">
+            <h2>Welcome Back!</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Enter your username">
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Enter your password">
+            <button onclick="login()">Login</button>
+            <p>Don't have an account? <a href="javascript:void(0);" onclick="showCreateAccountForm()">Create one</a></p>
+        </div>
+    </div>
+
+    <script>
+        
+        function showCreateAccountForm() {
+            const createAccountForm = document.getElementById("create-account-form");
+            const createAccountButton = document.getElementById("create-account-button");
+            const registrationForm = document.getElementById("registration-form");
+
+            if (createAccountForm.style.display === "none") {
+                createAccountForm.style.display = "block";
+                registrationForm.style.display = "none";
+                createAccountButton.textContent = "Back to Registration";
+            } else {
+                createAccountForm.style.display = "none";
+                registrationForm.style.display = "block";
+                createAccountButton.textContent = "Create Account";
+        }
+    </script>
+</body>
+</html>
+        }
